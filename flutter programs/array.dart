@@ -2,7 +2,6 @@ import 'dart:io';
 bool isSubsetSum(List<int> arr, int sum) {
   int n = arr.length;
   List<List<bool>> dp = List.generate(n + 1, (_) => List.filled(sum + 1, false));
-
   for (int i = 0; i <= n; i++) {
     dp[i][0] = true;
   }
